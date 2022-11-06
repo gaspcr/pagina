@@ -2,6 +2,8 @@
 <html>
 
 <head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Entrega 02</title>
@@ -22,7 +24,7 @@
         $usuarios = $result -> fetchAll();
     ?>
     <div class="table-responsive">
-    <table class="table table-striped"; margin: 0 auto;>
+    <table class="table table-striped">
         <thead class="thead-light">
             <tr scope="col"> Nombre Artista</tr>
             <tr scope="col"> Contacto Artista</tr>
