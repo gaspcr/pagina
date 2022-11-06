@@ -20,6 +20,7 @@
             <div class="collapse navbar-collapse" id="navcol-1"></div>
         </div>
     </nav>
+
     <section class="showcase">
         <section class="text-center bg-light features-icons">
             <div class="container">
@@ -40,6 +41,8 @@
                 </div>
             </div>
         </section>
+
+
         <section class="text-center bg-light features-icons" style="padding-top: 3px;">
             <div class="container">
                 <div class="row">
@@ -48,7 +51,11 @@
                             <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
                             <h3>Numero de entradas de cortesía de un artista</h3>
                         </div>
-                        <form><input class="form-control" type="text"><button class="btn btn-primary" type="button" style="padding-right: 15px;padding-left: 16px;margin-left: 21px;">Buscar por artista</button></form>
+                        <form action="consultas/consulta_tipo_nombre.php" method="post">
+                            <input type="text">
+                            <input type="submit" style="padding-right: 15px;padding-left: 16px;margin-left: 21px;">
+                            Buscar por artista
+                        </form>
                     </div>
                     <div class="col-lg-4">
                         <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
@@ -67,6 +74,8 @@
                 </div>
             </div>
         </section>
+
+
         <section class="text-center bg-light features-icons" style="padding-top: 0px;">
             <div class="container">
                 <div class="row">
@@ -95,6 +104,8 @@
                 </div>
             </div>
         </section>
+
+        
     </section>
     <footer class="bg-light footer">
         <div class="container">
