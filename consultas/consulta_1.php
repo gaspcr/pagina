@@ -7,14 +7,20 @@
         $result -> execute();
         $usuarios = $result -> fetchAll();
     ?>
-    <table>
-        <tr>
-            <th>Nombre</th>
-            <th>Telefono</th>
-        </tr>
-        <?php
-            foreach ($usuarios as $usuario) {
-                echo "<tr><td>$usuario[0]</td><td>$usuario[1]</td></tr>";
-            }
-        ?>
+    <table class="table table-bordered" style="width: 50%; margin: 0 auto;">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Contacto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($usuarios as $u): ?>
+                <tr>
+                    <td><?php echo $u[0] ?></td>
+                    <td><?php echo $u[1] ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
 </body>
