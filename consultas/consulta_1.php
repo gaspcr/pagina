@@ -22,11 +22,13 @@
         $result -> execute();
         $usuarios = $result -> fetchAll();
     ?>
-    <div class="table-responsive">
-    <table class="table table-striped">
-        <thead class="thead-light">
-            <tr scope="col"> Nombre Artista</tr>
-            <tr scope="col"> Contacto Artista</tr>
+    <div class="table">
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr> 
+                <th scope="col"> Nombre Artista</th>
+                <th scope="col"> Contacto Artista</th>
+            </tr>
         </thead>
         <tbody>
             <?php foreach ($usuarios as $u): ?>
