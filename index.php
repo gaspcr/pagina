@@ -40,7 +40,6 @@
                             <form action="consultas/consulta_2.php" method="post">
                                 <input type="submit" class="btn btn-primary" value="Ver listado">
                     </div>
-                    <div class="col"><img width="311" height="271" src="assets/img/bg-showcase-2.jpg"></div>
                 </div>
             </div>
         </section>
