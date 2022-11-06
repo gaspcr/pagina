@@ -29,7 +29,9 @@
                         <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
                             <div class="d-flex features-icons-icon"><i class="icon-screen-tablet m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
                             <h3>Nombre y teléfono de todos los artistas</h3>
-                        </div><button class="btn btn-primary" type="button">Ver listado</button>
+                            <form action="consultas/consulta_1.php" method="post">
+                                <input type="submit" class="btn btn-primary" value="Ver listado">
+                        </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
