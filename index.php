@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Pagina BDD</title>
-    <meta name="description" content="página entrega 2 bdd">
+    <title>Home - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -15,123 +14,98 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
-        <div class="container"><a class="navbar-brand" href="#">Pagina BDD, entrega 2</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"></button>
+        <div class="container">
+            <picture><img src="assets/img/logo.jpeg" width="281" height="120"></picture><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"></button>
+            <h3 style="padding-left: 50px;">Entrega 02 - Grupo 93 IIC<br></h3>
+            <div class="collapse navbar-collapse" id="navcol-1"></div>
         </div>
     </nav>
-    <header class="text-center text-white masthead" style="background:url('assets/img/bg-masthead.jpg')no-repeat center center;background-size:cover;">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-9 mx-auto position-relative">
-                    <h1 class="mb-5">Consulta 1: Obtener nombre y teléfono de todos los artistas</h1>
-                </div>
-                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
-                    <form>
-                        <div class="row">
-                            # boton que redirige a la pagina de consulta 1
-                            <div class="col-12 col-md-3"><a class="btn btn-block btn-lg btn-primary" role="button" href="consultas/consulta_1.php">Consulta 1</a></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="text-center bg-light features-icons">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-                        <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
-                        <h3>TEXTO</h3>
-                        <p class="lead mb-0">TEXTO</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-                        <div class="d-flex features-icons-icon"><i class="icon-layers m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
-                        <h3>TEXTO</h3>
-                        <p class="lead mb-0">TEXTO</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-                        <div class="d-flex features-icons-icon"><i class="icon-check m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
-                        <h3>TEXTO</h3>
-                        <p class="lead mb-0">TEXTO</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="showcase">
-        <div class="container-fluid p-0">
-            <div class="row g-0">
-                <div class="col-lg-6 text-white order-lg-2 showcase-img" style="background-image:url(&quot;assets/img/bg-showcase-1.jpg&quot;);"><span></span></div>
-                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                    <h2>TEXTO</h2>
-                    <p class="lead mb-0">TEXTO</p>
+        <section class="text-center bg-light features-icons">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                            <div class="d-flex features-icons-icon"><i class="icon-screen-tablet m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                            <h3>Nombre y teléfono de todos los artistas</h3>
+                        </div><button class="btn btn-primary" type="button">Ver listado</button>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                            <div class="d-flex features-icons-icon"><i class="icon-login m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                            <h3>Artista con mayor cantidad de entradas de cortesía</h3>
+                        </div><button class="btn btn-primary" type="button">Ver listado</button>
+                    </div>
+                    <div class="col"><img width="311" height="271" src="assets/img/bg-showcase-2.jpg"></div>
                 </div>
             </div>
-            <div class="row g-0">
-                <div class="col-lg-6 text-white showcase-img" style="background-image:url(&quot;assets/img/bg-showcase-2.jpg&quot;);"><span></span></div>
-                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                    <h2>TEXTO</h2>
-                    <p class="lead mb-0">TEXTO</p>
+        </section>
+        <section class="text-center bg-light features-icons" style="padding-top: 3px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-4">
+                        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                            <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                            <h3>Numero de entradas de cortesía de un artista</h3>
+                        </div>
+                        <form><input class="form-control" type="text"><button class="btn btn-primary" type="button" style="padding-right: 15px;padding-left: 16px;margin-left: 21px;">Buscar por artista</button></form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                            <div class="d-flex features-icons-icon"><i class="icon-people m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                            <h3>Datos último tour de un artista</h3>
+                        </div>
+                        <form style="padding-top: 0px;margin-top: 0px;"><input class="form-control" type="text"><button class="btn btn-primary" type="button" style="padding-right: 15px;padding-left: 16px;margin-left: 21px;">Buscar por artista</button></form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                            <div class="d-flex features-icons-icon"><i class="icon-plane m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                            <h3>Países visitados en un tour</h3>
+                        </div>
+                        <form><input class="form-control" type="text"><button class="btn btn-primary" type="button" style="padding-right: 15px;padding-left: 16px;margin-left: 21px;">Buscar por tour</button></form>
+                    </div>
                 </div>
             </div>
-            <div class="row g-0">
-                <div class="col-lg-6 text-white order-lg-2 showcase-img" style="background-image:url(&quot;assets/img/bg-showcase-3.jpg&quot;);"><span></span></div>
-                <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                    <h2>TEXTO</h2>
-                    <p class="lead mb-0">TEXTO</p>
+        </section>
+        <section class="text-center bg-light features-icons" style="padding-top: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-4">
+                        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                            <div class="d-flex features-icons-icon"><i class="icon-organization m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                            <h3>Productoras con las que ha trabajado un artista</h3>
+                        </div>
+                        <form><input class="form-control" type="text"><button class="btn btn-primary" type="button" style="padding-right: 15px;padding-left: 16px;margin-left: 21px;">Buscar por artista</button></form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                            <div class="d-flex features-icons-icon"><i class="icon-home m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                            <h3>Hoteles en los que se ha hospedado un artista</h3>
+                        </div>
+                        <p class="text-muted small mb-4 mb-lg-0">y cuántas veces se ha hospedado en cada uno (dado códigos de reserva distintos)</p>
+                        <form style="margin-top: 49px;"><input class="form-control" type="text" style="margin-top: -44px;"><button class="btn btn-primary" type="button" style="padding-right: 15px;padding-left: 16px;margin-left: 21px;">Buscar nombre</button></form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                            <div class="d-flex features-icons-icon"><i class="icon-question m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                            <h3>SORPRESITA</h3>
+                        </div>
+                        <form><button class="btn btn-primary" type="button" style="padding-right: 15px;padding-left: 16px;margin-left: 21px;">¿SORPRESITA?</button></form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
-    <section class="text-center bg-light testimonials">
-        <div class="container">
-            <h2 class="mb-5">TEXTO</h2>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="assets/img/testimonials-1.jpg">
-                        <h5>TEXTO</h5>
-                        <p class="font-weight-light mb-0">"TEXTO"</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="assets/img/testimonials-2.jpg">
-                        <h5>TEXTO</h5>
-                        <p class="font-weight-light mb-0">"TEXTO"</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="assets/img/testimonials-3.jpg">
-                        <h5>TEXTO</h5>
-                        <p class="font-weight-light mb-0">"TEXTO"</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>  
     <footer class="bg-light footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-start my-auto h-100">
-                    <ul class="list-inline mb-2">
-                        <li class="list-inline-item"><a href="#">About</a></li>
-                        <li class="list-inline-item"><span>⋅</span></li>
-                        <li class="list-inline-item"><a href="#">Contact</a></li>
-                        <li class="list-inline-item"><span>⋅</span></li>
-                        <li class="list-inline-item"><a href="#">Terms of &nbsp;Use</a></li>
-                        <li class="list-inline-item"><span>⋅</span></li>
-                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                    </ul>
-                    <p class="text-muted small mb-4 mb-lg-0">© Pagina BDD 2022. All Rights Reserved.</p>
+                    <p class="text-muted small mb-4 mb-lg-0">© Grupo 93 2022. All Rights Reserved. By Rodrigo Ugarte Kunisky &amp; Benjamin Vasquez<br></p>
                 </div>
                 <div class="col-lg-6 text-center text-lg-end my-auto h-100">
                     <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-github fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"></a></li>
                         <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
                     </ul>
                 </div>
