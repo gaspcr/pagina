@@ -31,6 +31,7 @@
                             <h3>Nombre y teléfono de todos los artistas</h3>
                             <form action="consultas/consulta_1.php" method="post">
                                 <input type="submit" class="btn btn-primary" value="Ver listado">
+                            </form>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -39,6 +40,7 @@
                             <h3>Artista con mayor cantidad de entradas de cortesía</h3>
                             <form action="consultas/consulta_2.php" method="post">
                                 <input type="submit" class="btn btn-primary" value="Ver listado">
+                            </form>
                     </div>
                 </div>
             </div>
