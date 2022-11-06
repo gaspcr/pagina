@@ -16,10 +16,11 @@
 <body>
     <?php
         require("../config/conexion.php");
-        # realiza una consulta que obtenga el numero de entradas de un artista, utilizar el id del artista para filtrar en entradas
-        # utilizar like para buscar el artista
+        # realiza una consulta que obtenga las entradas de cortesía de el artista ingresado
+        # realizar match en tabla entradas con el nombre del artista ingresado
+        # like para que no sea case sensitive
         $artista = $_POST["artista"];
-        $query = "SELECT nombre, count(*) FROM artistas, entradas WHERE artistas.id_artista = entradas.id_artista AND artistas.nombre LIKE '%$artista%';";
+        $query = "SELECT entradas.artista, entradas.asiento, artista.nombre FROM entradas, artista WHERE artista.nombre LIKE '%$artista%' AND entradas.artista = artista.nombre;";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
