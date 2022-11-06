@@ -8,7 +8,7 @@
         $usuarios = $result -> fetchAll();
     ?>
     <div class="table-responsive">
-    <table class="table table-bordered"; margin: 0 auto;>
+    <table class="table table-striped"; margin: 0 auto;>
         <thead class="thead-light">
             <tr scope="col"> Nombre Artista</tr>
             <tr scope="col"> Contacto Artista</tr>
