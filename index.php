@@ -56,9 +56,8 @@
                             <h3>Numero de entradas de cortesía de un artista</h3>
                         </div>
                         <form action="consultas/consulta_tipo_nombre.php" method="post">
-                            <input type="text">
-                            <input type="submit" style="padding-right: 15px;padding-left: 16px;margin-left: 21px;">
-                            Buscar por artista
+                            <input type="text" name="artista">
+                            <input type="submit" class="btn btn-primary" value="Consultar">
                         </form>
                     </div>
                     <div class="col-lg-4">
