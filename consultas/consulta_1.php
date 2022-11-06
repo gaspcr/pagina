@@ -21,6 +21,22 @@
         $result -> execute();
         $usuarios = $result -> fetchAll();
     ?>
+    <table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Contacto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+  </tbody>
+</table>
     <div class="table-responsive">
     <table class="table table-striped"; margin: 0 auto;>
         <thead class="thead-light">
