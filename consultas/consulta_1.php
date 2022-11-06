@@ -7,20 +7,20 @@
         $result -> execute();
         $usuarios = $result -> fetchAll();
     ?>
-    <table class="table table-bordered" style="width: 50%; margin: 0 auto;">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Contacto</th>
-            </tr>
+    <div class="table-responsive">
+    <table class="table table-bordered"; margin: 0 auto;>
+        <thead class="thead-light">
+            <tr scope="col"> Nombre Artista</tr>
+            <tr scope="col"> Contacto Artista</tr>
         </thead>
         <tbody>
             <?php foreach ($usuarios as $u): ?>
                 <tr>
-                    <td><?php echo $u[0] ?></td>
-                    <td><?php echo $u[1] ?></td>
+                    <td scope="row"><?php echo $u[0] ?></td>
+                    <td scope="row"><?php echo $u[1] ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
+    </div>
 </body>
