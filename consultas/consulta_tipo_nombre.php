@@ -16,11 +16,9 @@
 <body>
     <?php
         require("../config/conexion.php");
-        # realiza una consulta que obtenga las entradas de cortesía de el artista ingresado
-        # realizar match en tabla entradas con el nombre del artista ingresado
-        # like para que no sea case sensitive
+        # Realiza una consulta que obtenga el nombre del artista y el asiento de sus entradas
+        $query = "SELECT artistas.nombre, entradas.asiento FROM artistas, entradas WHERE artistas.nombre = entradas.artista;";
         $artista = $_POST["artista"];
-        $query = "SELECT entradas.artista, entradas.asiento FROM entradas WHERE artista.nombre LIKE '%$artista%' = entradas.artista;";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
