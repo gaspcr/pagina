@@ -28,7 +28,7 @@
         <thead class="table-dark">
             <tr> 
                 <th scope="col"> Nombre Artista</th>
-                <th scope="col"> Cantidad de entradas vendidas</th>
+                <th scope="col"> Cantidad de entradas de cortesía</th>
             </tr>
         </thead>
         <tbody>
