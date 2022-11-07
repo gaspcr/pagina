@@ -17,8 +17,8 @@
     <?php
         require("../config/conexion.php");
         # Realiza una consulta que obtenga el nombre del artista y el asiento de sus entradas
-        $query = "SELECT artistas.nombre, entradas.asiento FROM artistas, entradas WHERE artistas.nombre = entradas.artista;";
         $artista = $_POST["artista"];
+        $query = "SELECT artistas.nombre, entradas.asiento FROM artistas, entradas WHERE artistas.nombre = '$artista' AND artistas.nombre = entradas.artista;";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
