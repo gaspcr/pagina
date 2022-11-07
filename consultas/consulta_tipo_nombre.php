@@ -17,8 +17,9 @@
     <?php
         require("../config/conexion.php");
         # Realiza una consulta que obtenga el nombre del artista y el asiento de sus entradas
+        # utilizar like para el nombre del artista
         $artista = $_POST["artista"];
-        $query = "SELECT artistas.nombre, entradas.asiento FROM artistas, entradas WHERE artistas.nombre = '$artista' AND artistas.nombre = entradas.artista;";
+        $query = "SELECT artistas.nombre, entradas.asiento FROM artistas, entradas WHERE artistas.nombre LIKE '%$artista%' AND artistas.id = entradas.id_artista;";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
