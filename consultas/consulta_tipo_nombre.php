@@ -40,6 +40,10 @@
                     <td scope="row"><?php echo $u[1] ?></td>
                 </tr>
             <?php endforeach; ?>
+            # agregar numero de entradas
+            <tr>
+                <td scope="row">Numero de entradas</td>
+                <td scope="row"><?php echo count($usuarios) ?></td>
         </tbody>
     </table>
 </div>
