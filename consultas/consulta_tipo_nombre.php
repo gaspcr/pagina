@@ -19,7 +19,7 @@
         # Realiza una consulta que obtenga el nombre del artista y el asiento de sus entradas
         # que la consulta sea case insensitive
         $artista = $_POST["artista"];
-        $query = "SELECT artistas.nombre, entradas.asiento FROM artistas, entradas WHERE artistas.nombre LIKE '%$artista%' AND LOWER(artistas.nombre) = LOWER(entradas.artista);";
+        $query = "SELECT artistas.nombre, entradas.asiento FROM artistas, entradas WHERE artistas.nombre ILIKE '%$artista%' AND LOWER(artistas.nombre) = LOWER(entradas.artista);";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
