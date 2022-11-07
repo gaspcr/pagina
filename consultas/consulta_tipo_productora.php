@@ -42,8 +42,6 @@
                     </tr>
                 <?php endforeach; ?>
                 <tr>
-                    <td scope="row">Numero de entradas</td>
-                    <td scope="row"><?php echo count($usuarios) ?></td>
             </tbody>
         </table>
     </div>
