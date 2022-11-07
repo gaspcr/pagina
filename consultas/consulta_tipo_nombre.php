@@ -42,6 +42,8 @@
                 </tr>
             <?php endforeach; ?>
         </tbody>
+    </table>
+</div>
         <a href="../index.php" class="btn btn-primary">Volver</a>
 </body>
 </html>
