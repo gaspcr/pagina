@@ -17,7 +17,7 @@
     <?php
         require("../config/conexion.php");
         # realiza una consulta que obtenga los artistas con mayor numero de entradas
-        $query = "SELECT artistas.nombre, COUNT(*) FROM artistas, entradas WHERE artistas.id_artista = entradas.id_artista GROUP BY artistas.nombre ORDER BY COUNT(*) DESC;";
+        $query = "SELECT artistas.nombre, COUNT(*) FROM artistas, entradas WHERE artistas.nombre = entradas.artista GROUP BY artistas.nombre ORDER BY COUNT(*) DESC;";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
