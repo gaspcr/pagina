@@ -16,11 +16,11 @@
 <body>
     <?php
         require("../config/conexion.php");
-        $productora = $_POST["productora"];
+        $artista = $_POST["artista"];
         # Realiza una consulta que obtenga productoras con la que ha trabajado un artista
         # La tabla eventos tiene al artista, la productora y el evento
         # que la consulta sea case insensitive
-        $query = "SELECT DISTINCT productoras.nombre FROM productoras, eventos WHERE eventos.productora = productoras.nombre AND LOWER(productoras.nombre) LIKE LOWER('%$productora%');";
+        $query = "SELECT DISTINCT productoras.nombre FROM eventos, productoras WHERE eventos.productora = productoras.nombre AND eventos.artista = artista.nombre ILIKE '%$artista%';";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
