@@ -20,7 +20,7 @@
         # realizar match en tabla entradas con el nombre del artista ingresado
         # like para que no sea case sensitive
         $artista = $_POST["artista"];
-        $query = "SELECT entradas.artista, entradas.asiento, artista.nombre FROM entradas, artista WHERE artista.nombre LIKE '%$artista%' AND entradas.artista = artista.nombre;";
+        $query = "SELECT entradas.artista, entradas.asiento, artista.nombre FROM entradas, artista WHERE artista.nombre LIKE '%$artista%' = entradas.artista;";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
@@ -37,6 +37,7 @@
             <tbody>
                 <?php foreach ($usuarios as $u): ?>
                     <tr>
+                        dss
                         <td scope="row"><?php echo $u[0] ?></td>
                         <td scope="row"><?php echo $u[1] ?></td>
                     </tr>
