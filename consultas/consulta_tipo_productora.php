@@ -17,10 +17,11 @@
     <?php
         require("../config/conexion.php");
         $artista = $_POST["artista"];
-        # Realiza una consulta que obtenga productoras con la que ha trabajado un artista
-        # La tabla eventos tiene al artista, la productora y el evento
-        # que la consulta sea case insensitive
-        $query = "SELECT DISTINCT productoras.nombre FROM eventos, productoras WHERE eventos.productora = productoras.nombre AND eventos.artista = artista.nombre ILIKE '%$artista%';";
+        # Dado un artista, selecciona de la tabla eventos con qué productoras está asociado
+        # La tabla eventos tiene una columna de artistas, otra de productoras y otra con el nombre del evento
+        # y cuántos eventos ha realizado con cada una de ellas.
+        # la consulta debe ser case insensitive.
+        $query = "SELECT DISTINCT productoras.nombre, COUNT(eventos.nombre) FROM eventos, productoras WHERE eventos.productora = productoras.nombre AND eventos.artista ILIKE '%$artista%' GROUP BY productoras.nombre;";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
