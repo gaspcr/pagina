@@ -26,27 +26,22 @@
         $usuarios = $result -> fetchAll();
     ?>
 
-    <div class="table">
-        <table class="table table-striped table-hover">
-            <thead class="table-dark">
-                <tr> 
-                    <th scope="col"> Nombre Artista</th>
-                    <th scope="col"> Asiento</th>
+<div class="table">
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr> 
+                <th scope="col"> Nombre Artista</th>
+                <th scope="col"> Asiento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($usuarios as $u): ?>
+                <tr>
+                    <td scope="row"><?php echo $u[0] ?></td>
+                    <td scope="row"><?php echo $u[1] ?></td>
                 </tr>
-            </thead>
-            <tbody>
-                dsad
-                <?php foreach ($usuarios as $u): ?>
-                    <tr>
-                        dss
-                        <td scope="row"><?php echo $u[0] ?></td>
-                        <td scope="row"><?php echo $u[1] ?></td>
-
-                    </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-    </div>
-    <a href="../index.php" class="btn btn-primary">Volver</a>
+            <?php endforeach; ?>
+        </tbody>
+        <a href="../index.php" class="btn btn-primary">Volver</a>
 </body>
 </html>

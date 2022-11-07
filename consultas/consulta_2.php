@@ -40,5 +40,5 @@
             <?php endforeach; ?>
         </tbody>
         <a href="../index.php" class="btn btn-primary">Volver</a>
-
+</body>
 <html>
