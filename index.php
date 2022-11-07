@@ -87,7 +87,7 @@
                             <div class="d-flex features-icons-icon"><i class="icon-organization m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
                             <h3>Productoras con las que ha trabajado un artista</h3>
                         </div>
-                        <form action="consultas/consulta_tipo_nombre.php" method="post" class="form-control" type="text">
+                        <form action="consultas/consulta_tipo_productora.php" method="post" class="form-control" type="text">
                             <input type="text" name="artista">
                             <input type="submit" class="btn btn-primary" value="Consultar">
                         </form>
