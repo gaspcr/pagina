@@ -27,7 +27,6 @@
         $usuarios = $result -> fetchAll();
     ?>
 
-        # Mostrar en una tabla la información obtenida.
     <div>
         <table class="table table-striped table-hover">
             <thead>
