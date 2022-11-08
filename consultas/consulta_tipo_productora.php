@@ -17,32 +17,31 @@
     <?php
         require("../config/conexion.php");
         $artista = $_POST["artista"];
-        # Dado un artista, selecciona de la tabla eventos con qué productoras está asociado
-        # La tabla eventos tiene una columna de artistas, otra de productoras y otra con el nombre del evento
-        # y cuántos eventos ha realizado con cada una de ellas.
-        # la consulta debe ser case insensitive.
-        $query = "SELECT DISTINCT productoras.nombre, COUNT(eventos.nombre) FROM eventos, productoras WHERE eventos.productora = productoras.nombre AND eventos.artista ILIKE '%$artista%' GROUP BY productoras.nombre;";
+        # Realizar una consulta que obtenga productoras asociadas al artista ingresado.
+        # Utilizar tabla eventos.
+        # La tabla eventos contiene el nombre de la productora, el nombre del artista y el nombre del evento.
+        # La consulta debe ser case insensitive.
+        $query = "SELECT DISTINCT productoras.nombre FROM productoras, eventos WHERE eventos.productora = productoras.nombre AND eventos.artista ILIKE '%$artista%';";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
     ?>
 
-        <div class="table">
+        # Mostrar en una tabla la información obtenida.
+    <div>
         <table class="table table-striped table-hover">
-            <thead class="table-dark">
-                <tr> 
-                    <th scope="col"> Nombre Artista</th>
-                    <th scope="col"> Productora</th>
+            <thead>
+                <tr>
+                    <th scope="col">Productora</th>
+                    <th scope="col">Artista</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($usuarios as $u): ?>
-                    <tr>
-                        <td scope="row"><?php echo $u[0] ?></td>
-                        <td scope="row"><?php echo $u[1] ?></td>
-                    </tr>
-                <?php endforeach; ?>
-                <tr>
+                <?php
+                    foreach ($usuarios as $p) {
+                        echo "<tr><td>$p[0]</td><td>$p[1]</td></tr>";
+                    }
+                ?>
             </tbody>
         </table>
     </div>
