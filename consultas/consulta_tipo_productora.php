@@ -39,7 +39,7 @@
             <tbody>
                 <?php
                     foreach ($usuarios as $p) {
-                        echo "<tr><td>$p[0]</td><td>$p[1]</td></tr>";
+                        echo "<tr><td>$p[0]</td><td>$artista</td></tr>";
                     }
                 ?>
             </tbody>
