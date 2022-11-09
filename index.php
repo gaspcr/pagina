@@ -66,7 +66,7 @@
                             <h3>Datos último tour de un artista</h3>
                         </div>
                         <form action="consultas/consulta_ultimo_tour.php" method="post">
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" name="artista">
                         <input type="submit" class="btn btn-primary" value="Consultar">
                         </form>
                     </div>
