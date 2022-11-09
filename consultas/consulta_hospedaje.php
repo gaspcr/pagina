@@ -41,9 +41,16 @@
             </thead>
             <tbody>
                 <?php
-                    foreach ($usuarios as $p) {
-                        echo "<tr><td>$p[0]</td><td>$p[1]</td><td>$p[2]</td><td>codigo</td></tr>";
+                # Si la consulta está vacía, mostrar que el artista no se ha hospedado en ningún hotel.
+                if ($usuarios == NULL) {
+                    echo "<tr><td>El artista no se ha hospedado en ningún hotel.</td></tr>";
+                }
+                # Si la consulta no está vacía, mostrar los hoteles en los que se ha hospedado el artista.
+                else {
+                    foreach ($usuarios as $usuario) {
+                        echo "<tr><td>$usuario[0]</td><td>$usuario[1]</td><td>$usuario[2]</td><td>1</td></tr>";
                     }
+                }
                 ?>
             </tbody>
         </table>
