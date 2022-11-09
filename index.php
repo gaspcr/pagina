@@ -98,7 +98,7 @@
                             <h3>Hoteles en los que se ha hospedado un artista</h3>
                         </div>
                         <p class="text-muted small mb-4 mb-lg-0">y cuántas veces se ha hospedado en cada uno (dado códigos de reserva distintos)</p>
-                        <form action="consultas/consulta_hospedaje.php" method="post" style="margin-top: 49px;">
+                        <form action="consultas/consulta_hospedaje.php" method="post">
                         <input type="text" name="artista">
                         <input type="submit" class="btn btn-primary" value="Consultar">
                         </form>
