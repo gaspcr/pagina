@@ -56,7 +56,7 @@
                             <h3>Numero de entradas de cortesía de un artista</h3>
                         </div>
                         <form action="consultas/consulta_tipo_nombre.php" method="post">
-                            <input type="text" name="artista">
+                            <input class="form-control" type="text" name="artista">
                             <input type="submit" class="btn btn-primary" value="Consultar">
                         </form>
                     </div>
@@ -91,7 +91,7 @@
                             <h3>Productoras con las que ha trabajado un artista</h3>
                         </div>
                         <form action="consultas/consulta_tipo_productora.php" method="post">
-                            <input type="text" name="artista">
+                            <input class="form-control" type="text" name="artista">
                             <input type="submit" class="btn btn-primary" value="Consultar">
                         </form>
                     </div>
@@ -102,7 +102,7 @@
                         </div>
                         <p class="text-muted small mb-4 mb-lg-0">y cuántas veces se ha hospedado en cada uno (dado códigos de reserva distintos)</p>
                         <form action="consultas/consulta_hospedaje.php" method="post">
-                        <input type="text" name="artista">
+                        <input class="form-control" type="text" name="artista">
                         <input type="submit" class="btn btn-primary" value="Consultar">
                         </form>
                     </div>
