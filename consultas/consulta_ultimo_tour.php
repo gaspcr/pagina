@@ -26,7 +26,7 @@
         # Realizar el match entre la tabla eventos y la tabla tours usando el nombre del evento
         # La consulta debe retornar el nombre del tour, la fecha de inicio y la fecha de termino
         # La consulta debe ser case insensitive
-        $query = "SELECT tour, fecha_inicio, fecha_termino, id_tour FROM tours WHERE tour IN (SELECT evento FROM eventos WHERE LOWER(nombre_artista) LIKE LOWER('%$artista%'));";
+        $query = "SELECT tour, fecha_inicio, fecha_termino, id_tour FROM tours WHERE tour IN (SELECT evento FROM eventos WHERE LOWER(artista) LIKE LOWER('%$artista%'));";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
