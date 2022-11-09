@@ -98,7 +98,10 @@
                             <h3>Hoteles en los que se ha hospedado un artista</h3>
                         </div>
                         <p class="text-muted small mb-4 mb-lg-0">y cuántas veces se ha hospedado en cada uno (dado códigos de reserva distintos)</p>
-                        <form style="margin-top: 49px;"><input class="form-control" type="text" style="margin-top: -44px;"><button class="btn btn-primary" type="button" style="padding-right: 15px;padding-left: 16px;margin-left: 21px;">Buscar nombre</button></form>
+                        <form action="consultas/consulta_productora.php" method="post" style="margin-top: 49px;">
+                        <input type="text" name="artista">
+                        <input type="submit" class="btn btn-primary" value="Consultar">
+                        </form>
                     </div>
                     <div class="col-lg-4">
                         <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
