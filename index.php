@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+<nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
         <div class="container">
             <picture><img src="assets/img/logo.jpeg" width="281" height="120"></picture><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"></button>
             <h3 style="padding-left: 50px;">Entrega 02 - Grupo 93 IIC<br></h3>
@@ -65,7 +65,10 @@
                             <div class="d-flex features-icons-icon"><i class="icon-people m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
                             <h3>Datos último tour de un artista</h3>
                         </div>
-                        <form style="padding-top: 0px;margin-top: 0px;"><input class="form-control" type="text"><button class="btn btn-primary" type="button" style="padding-right: 15px;padding-left: 16px;margin-left: 21px;">Buscar por artista</button></form>
+                        <form action="consultas/consulta_ultimo_tour.php" method="post">
+                        <input class="form-control" type="text">
+                        <input type="submit" class="btn btn-primary" value="Consultar">
+                        </form>
                     </div>
                     <div class="col-lg-4">
                         <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
