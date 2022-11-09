@@ -1,4 +1,4 @@
-codigo_reserva,artista,fecha_inicio,fecha_termino,lugar,nombre_hotel,tipo_traslado,aeropuerto_salida,hora_salida,aeropuerto_llegada,hora_llegada,ID_hosp_traslado
+codigo_reserva,artista,fecha_inicio,fecha_termino,lugar,nombre_hotel,tipo_traslado,aeropuerto_salida,hora_salida,aeropuerto_llegada,hora_llegada,ID_ht
 DUE-45195,Paulo Londra,18/04/2019,23/04/2019,BILBAO,Hotel Ilunion,TERRESTRE,,,,,HT1
 VJA-35509,Lali Esposito,16/04/2019,17/04/2019,AUCKLAND,Hilton Auckland,TERRESTRE,,,,,HT2
 YOP-65177,Niall Horan,05/05/2020,09/05/2020,COLOGNE,StadHotel,AEREO,Aeropuerto Internacional de Bruselas,09:10,Aeropuerto Internacional de Cologne,12:47,HT3
