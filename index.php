@@ -76,7 +76,7 @@
                             <h3>Países visitados en un tour</h3>
                         </div>
                         <form action="consultas/consulta_paises_visitados.php" method="post" placeholder="hola">
-                        <input class="form-control" type="text" name="artista">
+                        <input class="form-control" type="text" name="evento">
                         <input type="submit" class="btn btn-primary" value="Consultar">
                         </form>
                     </div>
