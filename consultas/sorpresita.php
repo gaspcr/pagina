@@ -1,4 +1,3 @@
-# Crear una landing page que muestra un gif en el medio
 <!DOCTYPE html>
 <html>
 
@@ -13,14 +12,13 @@
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
-
 <body>
     <div class="container">
         <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-center">
                 <h1>ESTA VA PA</h1>
-                <iframe src="https://giphy.com/embed/dc9bu6GABNbG0fg3kq" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ZhotShotz-amor-corazon-tamo-dc9bu6GABNbG0fg3kq">via GIPHY</a></p>
+                <iframe src="https://giphy.com/embed/dc9bu6GABNbG0fg3kq" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ZhotShotz-amor-corazon-tamo-dc9bu6GABNbG0fg3kq"></a></p>
                 <h1>ESTA VA PA EL AYUDANTE QUE CORRIGA LA TAREA <3</h1>
                 </div>
             </div>
