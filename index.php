@@ -75,7 +75,10 @@
                             <div class="d-flex features-icons-icon"><i class="icon-plane m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
                             <h3>Países visitados en un tour</h3>
                         </div>
-                        <form><input class="form-control" type="text"><button class="btn btn-primary" type="button" style="padding-right: 15px;padding-left: 16px;margin-left: 21px;">Buscar por tour</button></form>
+                        <form action="consultas/consulta_paises_visitados.php" method="post" placeholder="hola">
+                        <input class="form-control" type="text" name="artista">
+                        <input type="submit" class="btn btn-primary" value="Consultar">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -127,9 +130,9 @@
                 </div>
                 <div class="col-lg-6 text-center text-lg-end my-auto h-100">
                     <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-github fa-2x fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="#"></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/gaspcr/grupo93"><i class="fa fa-github fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/gaspcr/pagina"><i class="fa fa-github fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/gaspcr/"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
                     </ul>
                 </div>
             </div>
