@@ -18,11 +18,12 @@
         require("../config/conexion.php");
         $artista = $_POST["artista"];
         # Realizar una consulta que obtenga el último tour de un artista.
+        # La tabla tours tiene los atributos id_tour, nombre, fecha_inicio, fecha_termino
+        # La tabla eventos tiene los atributos evento, artista, 
         # La tabla tours se relaciona con la tabla eventos ya que el nombre del tour es el nombre del evento.
-        # La tabla eventos se relaciona con la tabla artistas ya que el artista es el que realiza el evento.
         # En la tabla eventos, un mismo evento puede tener distintas fechas
         # La consulta debe ser case insensitive.
-        $query = "SELECT DISTINCT tour, tours.fecha_inicio, tours.fecha_termino FROM tours, eventos, artistas WHERE artista ILIKE '%$artista%' AND tours.tour = eventos.evento AND eventos.artista = artista;";
+        $query = "SELECT nombre, fecha_inicio, fecha_termino FROM tours WHERE nombre IN (SELECT evento FROM eventos WHERE artista ILIKE '%$artista%') ORDER BY fecha_termino DESC LIMIT 1;";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
