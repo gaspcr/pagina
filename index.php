@@ -16,7 +16,7 @@
 <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
         <div class="container">
             <picture><img src="assets/img/logo.jpeg" width="281" height="120"></picture><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"></button>
-            <h3 style="padding-left: 50px;">Entrega 02 - Grupo 93 IIC<br></h3>
+            <h3 style="padding-left: 50px;">Entrega 02 - Grupo 93<br></h3>
             <div class="collapse navbar-collapse" id="navcol-1"></div>
         </div>
     </nav>
