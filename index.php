@@ -103,7 +103,6 @@
                             <div class="d-flex features-icons-icon"><i class="icon-home m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
                             <h3>Hoteles en los que se ha hospedado un artista</h3>
                         </div>
-                        <p class="text-muted small mb-4 mb-lg-0">y cuántas veces se ha hospedado en cada uno (dado códigos de reserva distintos)</p>
                         <form action="consultas/consulta_hospedaje.php" method="post">
                         <input class="form-control" type="text" name="artista">
                         <input type="submit" class="btn btn-primary" value="Consultar">
