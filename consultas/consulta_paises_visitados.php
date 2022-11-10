@@ -22,7 +22,7 @@
         # La tabla eventos tiene los atributos id_evento, evento, artista, pais
         # El nombre del tour es el mismo que el nombre del evento
         # La consulta debe ser case insensitive
-        $query = "SELECT DISTINCT pais FROM eventos WHERE evento IN (SELECT nombre FROM tours WHERE nombre ILIKE '%$evento%');";
+        $query = "SELECT DISTINCT pais, evento FROM eventos WHERE evento IN (SELECT nombre FROM tours WHERE nombre ILIKE '%$evento%');";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
@@ -32,7 +32,7 @@
         <table class="table table-striped table-hover">
             <thead>
                 <tr>
-                    <th scope="col">Tour</th>
+                    <th scope="col">Evento</th>
                     <th scope="col">Paise visitado</th>
                 </tr>
             </thead>
@@ -45,7 +45,7 @@
                 # Si la consulta no está vacía, mostrar el los datos del tour más reciente
                 else {
                     foreach ($usuarios as $u) {
-                        echo "<tr><td>$evento</td><td>$u[0]</td></tr>";
+                        echo "<tr><td>$u[1]</td><td>$u[0]</td></tr>";
                     }
                 }
                 ?>
