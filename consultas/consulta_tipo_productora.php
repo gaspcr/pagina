@@ -17,10 +17,6 @@
     <?php
         require("../config/conexion.php");
         $artista = $_POST["artista"];
-        # Realizar una consulta que obtenga productoras asociadas al artista ingresado.
-        # Utilizar tabla eventos.
-        # La tabla eventos contiene el nombre de la productora, el nombre del artista y el nombre del evento.
-        # La consulta debe ser case insensitive.
         $query = "SELECT DISTINCT productoras.nombre FROM productoras, eventos WHERE eventos.productora = productoras.nombre AND eventos.artista ILIKE '%$artista%';";
         $result = $db -> prepare($query);
         $result -> execute();

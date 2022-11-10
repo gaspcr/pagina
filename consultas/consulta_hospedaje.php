@@ -17,12 +17,6 @@
     <?php
         require("../config/conexion.php");
         $artista = $_POST["artista"];
-        # Realizar una consulta que obtenga los hoteles en los que se ha hospedado el artista ingresado.
-        # Utilizar tabla hospedajes_traslados
-        # La tabla hospedajes_traslados contiene el nombre del hotel, el nombre del artista, el hotel y el código de la reserva.
-        # La consulta debe tener además el código de la reserva para contar la cantidad de veces que se ha hospedado el artista en el hotel.
-        # No existe tabla hotel, por lo que se debe utilizar la tabla hospedajes_traslados.
-        # La consulta debe ser case insensitive.
         $query = "SELECT DISTINCT hospedajes_traslados.nombre_hotel, hospedajes_traslados.artista, hospedajes_traslados.codigo_reserva FROM hospedajes_traslados WHERE hospedajes_traslados.artista ILIKE '%$artista%';";
         $result = $db -> prepare($query);
         $result -> execute();

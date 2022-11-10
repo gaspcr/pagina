@@ -16,7 +16,6 @@
 <body>
     <?php
         require("../config/conexion.php");
-        # realiza una consulta que obtenga el nombre y telefono de todos los artistas
         $query = "SELECT nombre, contacto FROM artistas;";
         $result = $db -> prepare($query);
         $result -> execute();
