@@ -113,7 +113,7 @@
                             <div class="d-flex features-icons-icon"><i class="icon-question m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
                             <h3>SORPRESITA</h3>
                         </div>
-                        <form action="consultas/sorporesita.php" method="post">
+                        <form action="consultas/sorpresita.php" method="post">
                         <input type="submit" class="btn btn-primary" value="SORPRESITA?">
                         </form>
                     </div>
