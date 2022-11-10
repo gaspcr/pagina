@@ -22,7 +22,7 @@
         # La tabla eventos tiene los atributos id_evento, evento, artista, pais
         # El nombre del tour es el mismo que el nombre del evento
         # La consulta debe ser case insensitive
-        $query = "SELECT DISTINCT eventos.pais FROM eventos, tour WHERE eventos.evento = tour.tour AND LOWER(eventos.artista) LIKE LOWER('%$artista%');";
+        $query = "SELECT DISTINCT pais FROM eventos WHERE evento IN (SELECT nombre FROM tours WHERE nombre IN (SELECT evento FROM eventos WHERE artista ILIKE '%$artista%'));";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
