@@ -23,7 +23,7 @@
         # La tabla tours se relaciona con la tabla eventos ya que el nombre del tour es el nombre del evento.
         # En la tabla eventos, un mismo evento puede tener distintas fechas
         # La consulta debe ser case insensitive.
-        $query = "SELECT nombre, fecha_inicio, fecha_termino FROM tours WHERE nombre IN (SELECT evento FROM eventos WHERE artista ILIKE '%$artista%') ORDER BY fecha_termino DESC LIMIT 1;";
+        $query = "SELECT nombre, fecha_inicio, fecha_termino, id_tour FROM tours WHERE nombre IN (SELECT evento FROM eventos WHERE artista ILIKE '%$artista%') ORDER BY fecha_termino DESC LIMIT 1;";
         $result = $db -> prepare($query);
         $result -> execute();
         $usuarios = $result -> fetchAll();
@@ -33,6 +33,7 @@
         <table class="table table-striped table-hover">
             <thead>
                 <tr>
+                    <th scope="col">Artista</th>
                     <th scope="col">Nombre tour</th>
                     <th scope="col">Fecha de inicio</th>
                     <th scope="col">Fecha de término</th>
@@ -48,7 +49,7 @@
                 # Si la consulta no está vacía, mostrar el los datos del tour más reciente
                 else {
                     foreach ($usuarios as $u) {
-                        echo "<tr><td>$u[0]</td><td>$u[1]</td><td>$u[2]</td></tr>";
+                        echo "<tr><td>$artista</td><td>$u[0]</td><td>$u[1]</td><td>$u[2]</td><td>$u[3]</td></tr>";
                     }
                 }
                 ?>
