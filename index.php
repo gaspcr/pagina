@@ -114,7 +114,7 @@
                             <h3>SORPRESITA</h3>
                         </div>
                         <form action="consultas/sorporesita.php" method="post">
-                            <button class="btn btn-primary" type="button" style="padding-right: 15px;padding-left: 16px;margin-left: 21px;">¿SORPRESITA?</button>
+                        <input type="submit" class="btn btn-primary" value="SORPRESITA?">
                         </form>
                     </div>
                 </div>
