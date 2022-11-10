@@ -45,7 +45,7 @@
                 # Si la consulta no está vacía, mostrar el los datos del tour más reciente
                 else {
                     foreach ($usuarios as $u) {
-                        echo "<tr><td>$u[0]</td></tr>";
+                        echo "<tr><td>$evento</td><td>$u[0]</td></tr>";
                     }
                 }
                 ?>
